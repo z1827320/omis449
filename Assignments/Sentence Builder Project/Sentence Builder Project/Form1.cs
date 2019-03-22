@@ -20,7 +20,7 @@ namespace Sentence_Builder_Project
             //intializing the textbox with a "null" or dummy value
             textBox.Text = "";
         }
-
+        //to see saved changes
         //loads the form
         private void Form1_Load(object sender, EventArgs e)
         {
