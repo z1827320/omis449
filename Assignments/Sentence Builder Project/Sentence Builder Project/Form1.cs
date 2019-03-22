@@ -21,6 +21,7 @@ namespace Sentence_Builder_Project
             textBox.Text = "";
         }
         //to see saved changes
+        //more changes
         //loads the form
         private void Form1_Load(object sender, EventArgs e)
         {
