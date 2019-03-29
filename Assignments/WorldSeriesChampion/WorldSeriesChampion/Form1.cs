@@ -17,7 +17,7 @@ namespace WorldSeriesChampion
             InitializeComponent();
         }
 
-        //Dexlares list for World Series Wins
+        //Delares list for World Series Wins
         List<string> WSWins = new List<string>();
 
         //Read files
@@ -52,25 +52,12 @@ namespace WorldSeriesChampion
                     Wins++;
             }
 
-            if (TeamBox.Text).SelectedIndex != -1)
+            if (TeamBox.SelectedIndex != -1)
             {
                 lblTeam.Text = T.ToString();
             }
-
-            lblWins.Text = Wins.ToString();
-        }
-
-        //load team file on load
-        private void WorldSeries_Load(object sender, EventArgs e)
-        {
-            List<string> Teams = new List<string>();
-
-            Teams = ReadFile(Teams);
-
-            foreach (string s in Teams)
-            {
-                TeamBox.Items.Add(s);
-            }
+            
+            lblWin.Text = Wins.ToString();
         }
 
         //Button Space
@@ -81,14 +68,34 @@ namespace WorldSeriesChampion
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            String Team = TeamBox.SelectedItem.ToString();
+            try
+            {
+                String Team = TeamBox.SelectedItem.ToString();
 
-            WSWinners(Team, WSWins);
+                WSWinners(Team, WSWins);
+            }
+            
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex + "Please select a team.");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void WorldSeries_Load_1(object sender, EventArgs e)
+        {
+            List<string> Teams = new List<string>();
+
+            Teams = ReadFile(Teams);
+
+            foreach (string s in Teams)
+            {
+                TeamBox.Items.Add(s);
+            }
         }
     }
 }

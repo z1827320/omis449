@@ -33,11 +33,12 @@
             this.btnCalc = new System.Windows.Forms.Button();
             this.lblTeam = new System.Windows.Forms.Label();
             this.lblWin = new System.Windows.Forms.Label();
+            this.TeamBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(12, 203);
+            this.btnLoad.Location = new System.Drawing.Point(29, 181);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(100, 41);
             this.btnLoad.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(179, 203);
+            this.btnExit.Location = new System.Drawing.Point(173, 181);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 41);
             this.btnExit.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(313, 29);
+            this.btnCalc.Location = new System.Drawing.Point(38, 114);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(74, 45);
             this.btnCalc.TabIndex = 2;
@@ -68,7 +69,7 @@
             // lblTeam
             // 
             this.lblTeam.AutoSize = true;
-            this.lblTeam.Location = new System.Drawing.Point(313, 81);
+            this.lblTeam.Location = new System.Drawing.Point(12, 29);
             this.lblTeam.Name = "lblTeam";
             this.lblTeam.Size = new System.Drawing.Size(68, 13);
             this.lblTeam.TabIndex = 3;
@@ -77,17 +78,26 @@
             // lblWin
             // 
             this.lblWin.AutoSize = true;
-            this.lblWin.Location = new System.Drawing.Point(310, 162);
+            this.lblWin.Location = new System.Drawing.Point(12, 59);
             this.lblWin.Name = "lblWin";
             this.lblWin.Size = new System.Drawing.Size(86, 13);
             this.lblWin.TabIndex = 4;
             this.lblWin.Text = "Number of Wins:";
             // 
+            // TeamBox
+            // 
+            this.TeamBox.FormattingEnabled = true;
+            this.TeamBox.Location = new System.Drawing.Point(186, 29);
+            this.TeamBox.Name = "TeamBox";
+            this.TeamBox.Size = new System.Drawing.Size(120, 95);
+            this.TeamBox.TabIndex = 5;
+            // 
             // WorldSeries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 451);
+            this.Controls.Add(this.TeamBox);
             this.Controls.Add(this.lblWin);
             this.Controls.Add(this.lblTeam);
             this.Controls.Add(this.btnCalc);
@@ -95,6 +105,7 @@
             this.Controls.Add(this.btnLoad);
             this.Name = "WorldSeries";
             this.Text = "World Series Champion";
+            this.Load += new System.EventHandler(this.WorldSeries_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,6 +118,7 @@
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Label lblTeam;
         private System.Windows.Forms.Label lblWin;
+        private System.Windows.Forms.ListBox TeamBox;
     }
 }
 
