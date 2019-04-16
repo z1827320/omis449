@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emailaddressbook", "emailaddressbook\emailaddressbook.csproj", "{834EE2C0-3AF5-401A-95A2-3F89436D38DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834EE2C0-3AF5-401A-95A2-3F89436D38DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834EE2C0-3AF5-401A-95A2-3F89436D38DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834EE2C0-3AF5-401A-95A2-3F89436D38DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834EE2C0-3AF5-401A-95A2-3F89436D38DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74C6CCE2-E2DD-4314-8882-D0B4FCB74F0C}
+	EndGlobalSection
+EndGlobal
