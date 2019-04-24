@@ -15,5 +15,38 @@ namespace Computer_Science_Student
         {
             InitializeComponent();
         }
+
+        private void getHoursButton_Click(object sender, EventArgs e)
+        {
+            //Variable to hold input
+            string name, id, track;
+
+            //get the students name and id
+            name = nameTextBox.Text;
+            id = idTextBox.Text;
+
+            //get the students academic track
+            if (infoSystemsRadioButton.Checked)
+            {
+                track = "Information Systems";
+            }
+            else
+            {
+                track = "Software Engineering";
+            }
+
+            //create a CompSciStudent object
+            CompSciStudent csStudent =
+                new CompSciStudent(name, id, track);
+
+            //display the students required hours
+            requiredHoursLabel.Text =
+                csStudent.RequiredHours.ToString("n1");
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
